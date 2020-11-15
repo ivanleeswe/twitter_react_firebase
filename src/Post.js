@@ -11,23 +11,24 @@ function Post({displayName, username, verified, text, image,avatar}){
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Ivan Lee {" "} 
+              {displayName} {" "} 
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" />   
-                @ivanleeswe         
+                {verified && <VerifiedUserIcon className="post__badge" />}  
+                @{username}         
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p> I challenge you to build a Twitter Clone</p>
+            <p> {text}</p>
           </div>
         </div>
+        <img src={image} />
         <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
