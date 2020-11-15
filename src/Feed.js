@@ -18,8 +18,18 @@ function Feed() {
       <div className="feed__header">
         <h2>Home</h2>
         <TweetBox />
-        <Post displayName="IvanLee" username='ivanleeswe' verified/>
-
+        
+        {posts.map((post) => (
+          <Post
+            key={post.text}
+            displayName={post.displayName}
+            username={post.username}
+            verified={post.verified}
+            text={post.text}
+            avatar={post.avatar}
+            image={post.image}
+          />
+        ))}
       </div>
     </div>
   )
