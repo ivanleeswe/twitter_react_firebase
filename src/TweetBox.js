@@ -1,5 +1,6 @@
 import React from 'react'
 import "./TweetBox.css"
+import { Avatar, Button } from "@material-ui/core";
 
 
 function TweetBox() {
@@ -7,7 +8,9 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-
+          <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
+          <input placeholder="What's happening"/>
+          <input placeholder="Enter image URL"/>
         </div>
         <Button>Tweet</Button>
       </form>
