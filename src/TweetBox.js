@@ -9,10 +9,10 @@ function TweetBox() {
       <form>
         <div className="tweetBox__input">
           <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
-          <input placeholder="What's happening"/>
-          <input placeholder="Enter image URL"/>
+          <input placeholder="What's happening" type='text' />
         </div>
-        <Button>Tweet</Button>
+        <input className="tweetBox__imageInput" placeholder="Enter image URL" type='text'/>
+        <Button className="tweetBox__tweetButton">Tweet</Button>
       </form>
     </div>
   )
