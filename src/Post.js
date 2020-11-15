@@ -14,11 +14,11 @@ function Post({displayName, username, verified, text, image,avatar}){
         <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
       </div>
       <div className="post__body">
-        <div className="post__header"></div>
+        <div className="post__header">
           <div className="post__headerText">
             <h3>
               Ivan Lee {" "} 
-              <span>
+              <span className="post__headerSpecial">
                 <VerifiedUserIcon className="post__badge" />   
                 @ivanleeswe         
               </span>
@@ -35,7 +35,7 @@ function Post({displayName, username, verified, text, image,avatar}){
             <PublishIcon fontSize="small" />
           </div>
       </div>
-
+    </div>
   )
 }
 
