@@ -3,7 +3,7 @@ import "./SidebarOption.css";
 
 
 function SidebarOption({ active, text, Icon }) {
-
+  //string interpolation. if youre active, and
   return (
     <div className={`sidebarOption ${active && 'sidebarOption--active'}`}> 
       <Icon />
