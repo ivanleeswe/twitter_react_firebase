@@ -16,7 +16,7 @@ function Widgets() {
       </div>
       <div className="widgets__widgetContainer">
         <h2>What's happening</h2>
-        <TwitterTweetEmbed tweetId={'858551177860055040'} />
+        <TwitterTweetEmbed tweetId={'1247616214769086465'} />
 
         <TwitterTimelineEmbed
           sourceType="profile"
@@ -28,7 +28,7 @@ function Widgets() {
             url={"https://facebook.com/ivanleeswe"}
             options={{ text: "#reactjs is awesome", via: "Ivan" }}
           />
-          
+
       </div>
     </div>
   )
